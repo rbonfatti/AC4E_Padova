@@ -1,97 +1,103 @@
-# Agentic Coding for Economists: LSE PhD Short Course
+# Agentic Coding for Economists - Padova, 25 June 2026
 
-Four-hour hands-on version for LSE PhD students in Economics.
+Participant-facing repository for a **5-hour hands-on workshop** at the
+University of Padova. The workshop compresses the Pavia material into one
+sequence that economists can use immediately on a research project.
 
-This repository adapts the full [Agentic Coding for Economists](https://github.com/antoniomele/AgenticCodingForEconomists)
-course into one compressed workshop. The emphasis is a **research-article harness**:
-participants copy a mini repo, install reusable skills and review agents, run a
-bounded empirics or writing pipeline, verify with replication and referee checks,
-and leave with a checklist they can apply to a dissertation or job market paper.
-
-## Course Snapshot
-
-- Format: 4 hours, in person
-- Audience: LSE PhD students in Economics
-- Style: short demos followed by guided exercises
-- Primary platforms: Codex, Claude Code, Cursor, GitHub, Playwright
-- Output: a forkable [`examples/starter_article/`](examples/starter_article/) harness
-  plus lane-specific installs in five tool tracks
+The running example is Card and Krueger's minimum-wage study. Participants use it
+to practice the same agentic workflow they can later transfer to a dissertation,
+paper, replication, or teaching project.
 
 ## Start Here
 
-**Workshop website:** run `npm run docs:dev` and open the local URL. Deploy via [Vercel](website/README.md) with root directory `website/`.
+1. Open [`START_HERE.md`](START_HERE.md) for the participant path.
+2. Complete [`SETUP.md`](SETUP.md) before the workshop if possible.
+3. Keep [`SCHEDULE.md`](SCHEDULE.md) open during the session.
+4. Use [`GUIDE.md`](GUIDE.md) as the main reference.
+5. Follow the tool-lane instructions in [`materials/tool_tracks.md`](materials/tool_tracks.md).
+6. Work from [`examples/starter_article/`](examples/starter_article/) when
+   building your own harness.
 
-1. Complete the [setup guide](SETUP.md) before the workshop.
-2. Read the [syllabus](SYLLABUS.md) for outcomes and timing.
-3. Read the [research article harness](docs/research_article_harness.md) checklist.
-4. Use the [instructor runbook](INSTRUCTOR_RUNBOOK.md) to deliver the session.
-5. Build projector slides from [`slides/workshop/workshop_slides.tex`](slides/workshop/workshop_slides.tex) (see [`slides/README.md`](slides/README.md); `npm run slides:build`).
-6. Pick a lane in the [five-track plan](materials/tool_tracks.md) (Codex CLI/app,
-   Claude CLI/app, or Cursor).
-7. Work through the modules in order:
+## Course Snapshot
 
-| Module | Topic | Time |
-| --- | --- | ---: |
-| 1 | [Scaffold the article repo](materials/module_01_foundations.md) | 50 min |
-| 2 | [Harness stack: skills, subagents, hooks, goals](materials/module_02_hooks_goals.md) | 55 min |
-| 3 | [Research pipeline sprint](materials/module_03_referee_review.md) | 55 min |
-| 4 | [Quality, replication, and data acquisition](materials/module_04_playwright.md) | 55 min |
-| 5 | [Harness sign-off and adoption plan](materials/module_05_capstone.md) | 25 min |
-
-The timing includes a 10 minute break after Module 2.
-
-## What Changed From The Full Course
-
-The full course covers multi-day SDD, GitHub swarms, cloud agents, and a large
-capstone. This short version compresses the article lifecycle into one path:
-
-1. Copy `starter_article` and set `AGENTS.md`, brief, and privacy boundaries.
-2. Install skills, subagents, hooks, and optional MCP from your tool lane.
-3. Update the research design memo and one code or LaTeX artifact.
-4. Run referee + replication checks and one Playwright data-acquisition demo.
-5. Sign off with the [harness checklist](docs/research_article_harness.md).
-
-## Five Workshop Lanes
-
-Same harness artifacts, different control surface ([`materials/tool_tracks.md`](materials/tool_tracks.md)):
-
-| Lane | Surface |
+| Item | Padova version |
 | --- | --- |
-| A1 | Codex CLI |
-| A2 | Codex desktop app |
-| B1 | Claude Code CLI |
-| B2 | Claude Code desktop app |
-| C | Cursor IDE |
+| Format | 5 hours, in person |
+| Audience | Economists and economics researchers |
+| Core example | Card-Krueger minimum-wage project |
+| Main tools | Codex, Claude Code, Cursor, GitHub, Playwright |
+| Output | Personalized research-article harness plus verification checklist |
 
-Merge lane files from `examples/{codex,codex-app,claude,claude-app,cursor}/` into your
-`starter_article` copy. Playwright always runs from a terminal.
+## What Participants Produce
 
-## Repository Structure
+By the end of the session, each participant should have at least a draft of:
+
+- a project brief and research design memo;
+- an agent instruction file and privacy boundary;
+- a tool-lane harness with skills, subagents, hooks, and optional MCP;
+- an orchestration log for issue/branch/cloud-agent work;
+- one verification or replication check;
+- a short 7-day adoption plan for their own research.
+
+## Repository Map
 
 ```text
 .
 +-- README.md
++-- START_HERE.md
 +-- SETUP.md
++-- SCHEDULE.md
 +-- SYLLABUS.md
-+-- INSTRUCTOR_RUNBOOK.md
++-- GUIDE.md
 +-- docs/
+|   +-- import_manifest.md
 |   +-- research_article_harness.md
-|   +-- inspiration_notes.md
 |   +-- sources.md
 +-- materials/
-+-- templates/
+|   +-- module_01_foundations.md
+|   +-- module_02_hooks_goals.md
+|   +-- module_03_referee_review.md
+|   +-- module_04_playwright.md
+|   +-- module_05_capstone.md
+|   +-- tool_tracks.md
 +-- examples/
-|   +-- starter_article/     # shared mini repo (all lanes)
-|   +-- codex/ codex-app/ claude/ claude-app/ cursor/
-|   +-- hooks/ paper/ playwright/ web-form/
-+-- slides/                  # Beamer deck for in-room delivery
-+-- website/                 # VitePress + five track tabs
+|   +-- starter_article/
+|   +-- codex/
+|   +-- codex-app/
+|   +-- claude/
+|   +-- claude-app/
+|   +-- cursor/
+|   +-- hooks/
+|   +-- paper/
+|   +-- playwright/
+|   +-- web-form/
++-- templates/
++-- slides/
 +-- scripts/
 ```
 
-## Ethical Boundary
+## Tool Lanes
 
-Use AI referee tools on your own work, public papers, or material where you have
-permission. Do not upload a confidential manuscript that you are reviewing for a
-journal, conference, or editor unless the venue explicitly permits it and the
-relevant confidentiality obligations are satisfied.
+All lanes use the same research-harness ideas. Pick the surface you will
+actually use:
+
+| Lane | Surface | Starting point |
+| --- | --- | --- |
+| A1 | Codex CLI | `examples/codex/` |
+| A2 | Codex app | `examples/codex-app/` plus `examples/codex/` |
+| B1 | Claude Code CLI | `examples/claude/` |
+| B2 | Claude Code app | `examples/claude-app/` plus `examples/claude/` |
+| C | Cursor | `examples/cursor/` |
+
+Tool UI and configuration details change quickly. When a setup step depends on
+the installed version, use the official links in [`docs/sources.md`](docs/sources.md)
+and verify the label or command in your version.
+
+## Provenance
+
+The initial base was imported from `meleantonio/AC4E_LSE_PhD_Students`; see
+[`docs/import_manifest.md`](docs/import_manifest.md). The Padova structure and
+Card-Krueger guide draw on `AC4E_Pavia`; see [`docs/sources.md`](docs/sources.md).
+
+No `followup/`, `follow_up/`, or `website/` folder is part of this participant
+repository.
