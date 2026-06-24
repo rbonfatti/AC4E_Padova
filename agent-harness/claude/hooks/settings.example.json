@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "_comment": "Illustrative Claude Code project settings. Copy to .claude/settings.json, read every hook script, then review and trust hooks with /hooks before use.",
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(./data/raw/**)",
+      "Read(./data/private/**)",
+      "Edit(./data/raw/**)",
+      "Write(./data/raw/**)",
+      "Edit(./data/private/**)",
+      "Write(./data/private/**)",
+      "Bash(cat .env*)",
+      "Bash(printenv *)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "Bash(gh pr merge *)",
+      "Bash(rm -rf *)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "filesystem": {
+      "denyRead": [
+        "./.env",
+        "./.env.*",
+        "./secrets",
+        "./data/raw",
+        "./data/private"
+      ],
+      "denyWrite": [
+        "./data/raw",
+        "./data/private"
+      ]
+    }
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/prompt_safety_note.py"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Read|Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/pre_tool_use_policy.py"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash|Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 .claude/hooks/verification_reminder.py"
+          }
+        ]
+      }
+    ]
+  }
+}
