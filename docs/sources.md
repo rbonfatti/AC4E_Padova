@@ -55,8 +55,12 @@ references in participant-facing Padova orientation files.
 ## Card-Krueger Running Example
 
 - David Card data page: <https://davidcard.berkeley.edu/data_sets.html>
+- David Card data readme: <https://davidcard.berkeley.edu/readme/njmin-readme.txt>
 - NBER working paper page: <https://www.nber.org/papers/w4509>
 - Paper PDF: <https://davidcard.berkeley.edu/papers/njmin-aer.pdf>
+
+The runnable repository example is `examples/card-krueger/`. Its bundled CSV is
+synthetic teaching data; the public data archive is referenced but not bundled.
 
 ## Economics Review And Adoption References
 

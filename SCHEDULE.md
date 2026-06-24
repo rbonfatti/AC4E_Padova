@@ -17,12 +17,14 @@ session.
 
 ## Demo Sequence
 
-1. Open `examples/starter_article/`.
-2. Read `AGENTS.md`, project brief, and research design memo.
-3. Ask an agent to explain the Card-Krueger task without editing files.
-4. Add or revise one scoped artifact.
-5. Run or inspect one verification step.
-6. Record what was delegated, what was verified, and what remains human-owned.
+1. Open `examples/card-krueger/`.
+2. Run or inspect the baseline DiD command.
+3. Open `examples/starter_article/`.
+4. Read `AGENTS.md`, project brief, and research design memo.
+5. Ask an agent to explain the Card-Krueger task without editing files.
+6. Add or revise one scoped artifact.
+7. Run or inspect one verification step.
+8. Record what was delegated, what was verified, and what remains human-owned.
 
 ## Workshop Rhythm
 

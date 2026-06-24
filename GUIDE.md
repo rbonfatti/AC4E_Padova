@@ -45,6 +45,10 @@ Workshop translation:
 5. run a reviewer or replication check;
 6. record what the agent did and what the human reviewed.
 
+The runnable workshop version lives in [`examples/card-krueger/`](examples/card-krueger/).
+It uses clearly labeled synthetic teaching data, not Card and Krueger's raw
+data.
+
 ## Five-Hour Path
 
 | Block | What you learn | What you produce |
@@ -82,7 +86,8 @@ Use this before editing anything:
 
 ```text
 Read README.md, START_HERE.md, SCHEDULE.md, GUIDE.md, and
-examples/starter_article/README.md. Do not edit files. Explain:
+examples/card-krueger/README.md and examples/starter_article/README.md. Do not
+edit files. Explain:
 1. the workshop path;
 2. the Card-Krueger running example;
 3. which files I should copy or personalize;
@@ -92,7 +97,8 @@ examples/starter_article/README.md. Do not edit files. Explain:
 ## Card-Krueger Scaffold Prompt
 
 ```text
-Use examples/starter_article as the project skeleton. Do not edit raw data.
+Use examples/card-krueger as the running example and examples/starter_article as
+the project skeleton. Do not edit raw data.
 Draft a project brief for the Card-Krueger minimum-wage example with research
 question, data source, method, expected outputs, and out-of-scope items. Save the
 draft in docs/project_brief.md or show me the diff first.

@@ -18,6 +18,8 @@ Keep these files open:
 - [`GUIDE.md`](GUIDE.md) - explanations and copy-paste prompts.
 - [`materials/tool_tracks.md`](materials/tool_tracks.md) - Codex, Claude Code,
   and Cursor lanes.
+- [`examples/card-krueger/`](examples/card-krueger/) - shared runnable economics
+  example.
 - [`examples/starter_article/`](examples/starter_article/) - shared mini repo.
 - [`docs/research_article_harness.md`](docs/research_article_harness.md) - final
   checklist.
@@ -25,18 +27,20 @@ Keep these files open:
 ## The Main Path
 
 1. Choose a tool lane.
-2. Copy or work from `examples/starter_article/`.
-3. Add project instructions and privacy boundaries.
-4. Build a small harness: skills, subagents, hooks, optional MCP, and a goal or
+2. Run `examples/card-krueger/` to see the workshop's baseline DiD example.
+3. Copy or work from `examples/starter_article/`.
+4. Add project instructions and privacy boundaries.
+5. Build a small harness: skills, subagents, hooks, optional MCP, and a goal or
    cloud-agent task.
-5. Use the Card-Krueger example to practice a research design memo and
+6. Use the Card-Krueger example to practice a research design memo and
    verification loop.
-6. Transfer the checklist to one real project of your own.
+7. Transfer the checklist to one real project of your own.
 
 ## Expected Outputs
 
 | Output | Where to look |
 | --- | --- |
+| Runnable Card-Krueger example | `examples/card-krueger/` |
 | Project brief | `templates/project_brief.md` or `examples/starter_article/docs/project_brief.md` |
 | Design memo | `templates/research_design_memo.md` or `examples/starter_article/docs/research_design_memo.md` |
 | Agent instructions | `templates/AGENTS_economics.md` |

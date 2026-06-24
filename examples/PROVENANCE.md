@@ -4,6 +4,7 @@ Sanitized copies for teaching. No API keys or personal paths.
 
 | Workshop path | Source | Notes |
 | --- | --- | --- |
+| `examples/card-krueger/` | Adapted from Pavia `examples/card-krueger-toy/` plus verified public Card-Krueger source links | Synthetic teaching data; cleaned for Padova path and tests |
 | `starter_article/.cursor/skills/research-sdd/` | `~/.cursor/skills/sdd/` | Trimmed for research `spec/intent.md` |
 | `starter_article/.cursor/skills/paper-polisher/` | `~/.cursor/skills/deslop-prose/` | Short prose rules for economics papers |
 | `starter_article/.cursor/skills/replication-checker/` | AgenticCodingForEconomists `skills/course/replication-checker/` | Script + criteria |

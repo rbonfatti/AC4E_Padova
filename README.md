@@ -15,7 +15,9 @@ paper, replication, or teaching project.
 3. Keep [`SCHEDULE.md`](SCHEDULE.md) open during the session.
 4. Use [`GUIDE.md`](GUIDE.md) as the main reference.
 5. Follow the tool-lane instructions in [`materials/tool_tracks.md`](materials/tool_tracks.md).
-6. Work from [`examples/starter_article/`](examples/starter_article/) when
+6. Run [`examples/card-krueger/`](examples/card-krueger/) for the shared
+   economics example.
+7. Work from [`examples/starter_article/`](examples/starter_article/) when
    building your own harness.
 
 ## Course Snapshot
@@ -24,7 +26,7 @@ paper, replication, or teaching project.
 | --- | --- |
 | Format | 5 hours, in person |
 | Audience | Economists and economics researchers |
-| Core example | Card-Krueger minimum-wage project |
+| Core example | `examples/card-krueger/` Card-Krueger teaching project |
 | Main tools | Codex, Claude Code, Cursor, GitHub, Playwright |
 | Output | Personalized research-article harness plus verification checklist |
 
@@ -61,6 +63,7 @@ By the end of the session, each participant should have at least a draft of:
 |   +-- module_05_capstone.md
 |   +-- tool_tracks.md
 +-- examples/
+|   +-- card-krueger/
 |   +-- starter_article/
 |   +-- codex/
 |   +-- codex-app/
