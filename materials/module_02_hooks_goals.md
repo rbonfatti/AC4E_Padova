@@ -21,10 +21,10 @@ Merge instructions: your lane README under `examples/{codex,claude,cursor}/`.
 - [ ] `referee-checklist` skill
 - [ ] `replication-checker` skill
 - [ ] `research-sdd` or `paper-polisher` skill
-- [ ] `identification-data-reviewer` subagent or identification pass via skill
-- [ ] `verifier` subagent where supported
+- [ ] identification or data reviewer subagent
+- [ ] replication verifier subagent where supported
 - [ ] One hook pack (Codex/Claude/Cursor)
-- [ ] (Cursor) Review `mcp.json.example` — optional FRED row in data map
+- [ ] Review the lane MCP example — optional FRED row in data map
 
 ## Step-by-step: skills
 
@@ -69,6 +69,7 @@ Allowed: src/, tables/, paper/, docs/. Forbidden: data/raw/.
 
 - Merge `.claude/skills/` and `.claude/agents/` from [`examples/claude/`](../examples/claude/README.md).
 - `/agents` to run identification-reviewer.
+- Optional MCP: copy `examples/claude/.mcp.json.example` to `.mcp.json` and keep the API key in the environment.
 
 ### Claude Code app
 
@@ -78,7 +79,7 @@ Allowed: src/, tables/, paper/, docs/. Forbidden: data/raw/.
 
 - Full merge per [`examples/cursor/README.md`](../examples/cursor/README.md).
 - Subagents: Task tool or `@identification-reviewer`.
-- Optional MCP: copy `mcp.json.example` → `mcp.json` with your API key.
+- Optional MCP: copy the lane `mcp.json.example` to the project config path and keep your API key out of git.
 
 ## Debrief
 

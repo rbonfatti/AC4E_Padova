@@ -13,6 +13,7 @@ Sanitized copies for teaching. No API keys or personal paths.
 | `starter_article/.cursor/hooks/` | LSE `examples/claude/hooks/` + Cursor hook pattern | Verification reminder |
 | `examples/hooks/.codex/` | Course-authored | SessionStart / PreToolUse / PostToolUse |
 | `agent-harness/codex/` | Adapted from Pavia harness and checked against official Codex docs on 2026-06-24 | Portable Codex skills, subagents, hooks, MCP config, goals, orchestration |
+| `agent-harness/claude/` | Adapted from Pavia harness and checked against official Claude Code docs on 2026-06-24 | Portable Claude skills, subagents, settings/hooks, MCP config, goals, orchestration |
 | `examples/cursor/.cursor/mcp.json.example` | Template only | Replace `YOUR_FRED_API_KEY_HERE` |
 | `examples/plugins/README.md` | Cursor marketplace docs | Optional superpowers / doc-sync plugins |
 

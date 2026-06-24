@@ -22,9 +22,10 @@ Artifact paths match the CLI tracks; only setup and resume differ.
 4. Copy `examples/claude/CLAUDE.md` → root `CLAUDE.md`.
 5. First prompt: summarize workshop goals; do not edit yet.
 6. Skills: `.claude/skills/referee-checklist/SKILL.md`.
-7. Hooks: copy `settings.example.json` → `.claude/settings.json`; `/hooks`.
-8. Long-running work: use checkpoints **in the same session** (not CLI resume).
-9. Outputs: save under `outputs/`.
+7. Hooks: copy `settings.example.json` → `.claude/settings.json`; copy hook scripts; `/hooks`.
+8. Optional MCP: copy `examples/claude/.mcp.json.example` → `.mcp.json`; keep keys in environment variables.
+9. Long-running work: use checkpoints **in the same session** (not CLI resume).
+10. Outputs: save under `outputs/`.
 
 ## Playwright (both app tracks)
 

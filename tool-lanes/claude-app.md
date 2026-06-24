@@ -33,7 +33,7 @@ files I need from examples/claude/.
 | Skills | `examples/claude/.claude/skills/` |
 | Subagents/reviewers | `examples/claude/.claude/agents/` |
 | Hooks | `examples/claude/.claude/settings.example.json` and `.claude/hooks/` |
-| MCP | project `.claude/settings.json` MCP entries after issue #9; env vars for secrets |
+| MCP | `examples/claude/.mcp.json.example` copied to project `.mcp.json`; env vars for secrets |
 | Loop/goal | app checkpoints, app sessions, `/loop` where available |
 | Cloud/background | desktop/web/background sessions where account features allow |
 | Review | visual diff, reviewer subagent, PR evidence |
@@ -49,6 +49,7 @@ cp -r examples/claude/.claude/skills/* /path/to/my-article/.claude/skills/
 cp examples/claude/.claude/agents/*.md /path/to/my-article/.claude/agents/
 cp -r examples/claude/.claude/hooks/* /path/to/my-article/.claude/hooks/
 cp examples/claude/.claude/settings.example.json /path/to/my-article/.claude/settings.json
+cp examples/claude/.mcp.json.example /path/to/my-article/.mcp.json
 cp examples/claude/CLAUDE.md /path/to/my-article/CLAUDE.md
 ```
 

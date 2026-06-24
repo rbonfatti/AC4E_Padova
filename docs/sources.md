@@ -45,6 +45,13 @@ examples. Older Pavia issue text used `/config/hooks/`, `/config/mcp/`, and
 - Claude Code hooks guide: <https://code.claude.com/docs/en/hooks-guide>
 - Claude Code MCP: <https://code.claude.com/docs/en/mcp>
 
+Harness note checked on 2026-06-24: the Padova Claude lane uses
+`.claude/skills/` for project skills, `.claude/agents/` for project subagents,
+`.claude/settings.json` for permissions and hooks, `.claude/hooks/` for hook
+scripts, and root `.mcp.json` for project MCP servers. Settings examples use
+`permissions.deny` and sandbox `filesystem.denyRead` / `denyWrite` for `.env`,
+secret, raw-data, and private-data paths.
+
 ## Cursor
 
 - Cursor docs: <https://cursor.com/docs>

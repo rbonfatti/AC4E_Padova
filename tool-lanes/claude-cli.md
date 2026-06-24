@@ -36,7 +36,7 @@ examples/claude/README.md. Do not edit files. Explain the Claude CLI lane.
 | Skills | `examples/claude/.claude/skills/` |
 | Subagents/reviewers | `examples/claude/.claude/agents/` |
 | Hooks | `examples/claude/.claude/settings.example.json` and `.claude/hooks/` |
-| MCP | project `.claude/settings.json` MCP entries after issue #9; secrets in env vars |
+| MCP | `examples/claude/.mcp.json.example` copied to project `.mcp.json`; secrets in env vars |
 | Loop/goal | checkpoint prompts, `/loop` where available, `claude --continue` |
 | Cloud/background | Claude web, background sessions, or team workflows when available |
 | Review | reviewer subagent, git diff, PR evidence |
@@ -50,6 +50,7 @@ cp -r examples/claude/.claude/skills/* /path/to/my-article/.claude/skills/
 cp examples/claude/.claude/agents/*.md /path/to/my-article/.claude/agents/
 cp -r examples/claude/.claude/hooks/* /path/to/my-article/.claude/hooks/
 cp examples/claude/.claude/settings.example.json /path/to/my-article/.claude/settings.json
+cp examples/claude/.mcp.json.example /path/to/my-article/.mcp.json
 cp examples/claude/CLAUDE.md /path/to/my-article/CLAUDE.md
 ```
 
