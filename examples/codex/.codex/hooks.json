@@ -1,4 +1,5 @@
 {
+  "_comment": "Illustrative Codex hooks for economics research. Copy to .codex/hooks.json, read every hook script, then review and trust with /hooks before use.",
   "hooks": {
     "SessionStart": [
       {
@@ -7,7 +8,7 @@
           {
             "type": "command",
             "command": "python3 .codex/hooks/session_start_context.py",
-            "statusMessage": "Loading workshop safety context"
+            "statusMessage": "Loading economics research safety context"
           }
         ]
       }
@@ -26,7 +27,7 @@
     ],
     "PostToolUse": [
       {
-        "matcher": "Bash",
+        "matcher": "Bash|Write|Edit|ApplyPatch",
         "hooks": [
           {
             "type": "command",

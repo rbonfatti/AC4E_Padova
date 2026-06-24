@@ -1,10 +1,29 @@
 # Codex Project Instructions For Economics Research
 
-Before editing, read the README, this file, and the relevant task file.
+Read the project README, the task or issue, and any relevant data map before
+editing. Prefer small, reviewable changes with explicit verification evidence.
 
-- Protect `data/raw/` and confidential manuscripts.
-- Do not invent citations, results, or data sources.
-- Prefer small, reviewable edits.
-- Use `/diff`, `/review`, and verification commands before completion.
-- For paper review, separate major issues from optional improvements.
+## Research Boundaries
 
+- Do not invent citations, data sources, coefficients, or robustness results.
+- Keep causal language tied to the stated identification assumptions.
+- Treat `data/raw/`, private drafts, and credentials as protected. Do not inspect
+  or print them without explicit human approval.
+- Use relative paths and document the command that reproduces each output.
+- For synthetic teaching data, state that no substantive research claim follows.
+
+## Card-Krueger Running Case
+
+The workshop running case is `examples/card-krueger/`. The bundled CSV is
+synthetic teaching data. It illustrates data documentation, DiD mechanics, tests,
+agent review, goals, and orchestration. It is not the Card-Krueger raw data and it
+does not reproduce the published estimates.
+
+## Review Standard
+
+Before claiming completion, report:
+
+- files changed;
+- verification command and result, or why it was not run;
+- whether data, assumptions, and caveats stayed consistent;
+- residual risks or needed human checks.
