@@ -1,6 +1,6 @@
 # Inspiration Notes (Peer Workshops)
 
-How external economist resources inform this LSE workshop. We cite and adapt
+How external economist resources inform this Padova workshop. We cite and adapt
 **patterns**, not slides.
 
 | Resource | Link | Mapped to |

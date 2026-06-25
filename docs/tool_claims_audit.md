@@ -47,8 +47,9 @@ the fallback path for the same issue.
 - Keep the Playwright exercise deterministic by using the local static form and
   by installing browser binaries before browser-backed demos.
 
-## Follow-Up Review
+## Downstream Review
 
-Issues #14 and #15 should verify the complete repository after this audit:
-examples, links, workshop sequence, and stale imported wording that is not part
-of the tool-claims surface.
+Issue #14 produced [`docs/verification_report.md`](verification_report.md) for
+example, slide, and harness checks. Issue #15 produced
+[`docs/final_readiness_review.md`](final_readiness_review.md) for participant
+sequence and stale-import review.
